@@ -1,0 +1,32 @@
+    
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        li::before {
+            content: '\1F4C1'; /* Icono de carpeta */
+            margin-right: 10px;
+        }
+
+        .sub-ou {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .toggle::before {
+            content: '\25B6'; /* Flecha derecha */
+            margin-right: 5px;
+        }
+
+        .toggle.active::before {
+            content: '\25BC'; /* Flecha abajo */
+        }
+    
